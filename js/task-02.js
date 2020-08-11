@@ -16,7 +16,11 @@ class User {
     );
   }
 }
-const mango = new User("Mango", 2, 20);
+const mango = new User({
+  name: "Mango",
+  age: 2,
+  followers: 20,
+});
 
 mango.getInfo(); // User Mango is 2 years old and has 20 followers
 
